@@ -1,19 +1,19 @@
 Fase 1 - Setup Inicial:
-    ☐ Faça um fork desse repositório para a sua conta github
-    ☐ Clone o seu repositório para a sua máquina local
-    ☐ Inicie um projeto node na pasta deste projeto
+    ✔ Faça um fork desse repositório para a sua conta github @done(22-02-24 16:34)
+    ✔ Clone o seu repositório para a sua máquina local @done(22-02-24 16:34)
+    ✔ Inicie um projeto node na pasta deste projeto @done(22-03-05 13:52)
     
     Verificações: 
-        ☐ Se o comando npm init criou um arquivo package.json na raíz do seu projeto
+        ✔ Se o comando npm init criou um arquivo package.json na raíz do seu projeto @done(22-03-05 13:52)
 
 
 
 Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
-    ☐ Instale a biblioteca express no projeto
-    ☐ Faça com que o git ignore a pasta node_modules
-    ☐ Crie um arquivo chamado app.js na raíz do seu projeto
+    ✔ Instale a biblioteca express no projeto @done(22-03-05 13:56)
+    ✔ Faça com que o git ignore a pasta node_modules @done(22-03-05 14:00)
+    ✔ Crie um arquivo chamado app.js na raíz do seu projeto @done(22-03-05 13:57)
     ☐ No app.js:
-        ☐ Importe o express
+        ✔ Importe o express @done(22-03-05 14:02)
         ☐ Crie um aplicação web com o express e guarde-a numa constante app.
         ☐ Crie uma rota get para o endereço '/'.
             Quando acessada, essa rota deve responder um 'Olá, visitante!' para o cliente

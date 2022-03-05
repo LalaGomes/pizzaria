@@ -1,0 +1,22 @@
+{
+  "name": "pizzaria",
+  "version": "1.0.0",
+  "description": "Para ver esse projeto funcionando visite https://pizzaria-fantastica.herokuapp.com/\r Para desenvolver esse projeto, siga instruções no arquivo roadmap.todo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LalaGomes/pizzaria.git"
+  },
+  "author": "Lara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LalaGomes/pizzaria/issues"
+  },
+  "homepage": "https://github.com/LalaGomes/pizzaria#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
