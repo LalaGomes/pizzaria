@@ -14,31 +14,31 @@ Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
     ✔ Crie um arquivo chamado app.js na raíz do seu projeto @done(22-03-05 13:57)
     ☐ No app.js:
         ✔ Importe o express @done(22-03-05 14:02)
-        ☐ Crie um aplicação web com o express e guarde-a numa constante app.
-        ☐ Crie uma rota get para o endereço '/'.
+        ✔ Crie um aplicação web com o express e guarde-a numa constante app. @done(22-03-07 12:29)
+        ✔ Crie uma rota get para o endereço '/'. @done(22-03-07 12:34)
             Quando acessada, essa rota deve responder um 'Olá, visitante!' para o cliente
-        ☐ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen)
+        ✔ Escreva uma linha que iniciará o servidor na porta 3000 (app.listen) @done(22-03-07 12:40)
             Quando o servidor iniciar, ele deve escrever no console: "Servidor rodando na porta 3000"
 
     Verificações:
-        ☐ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console
-        ☐ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!"
-        ☐ Verifique se a pasta node_modules aparece listada no comando git status
+        ✔ Execute o comando node app.js para iniciar o servidor. Você deve ver a mensagem "Servidor rodando na porta 3000" no console @done(22-03-07 12:40)
+        ✔ Abra o navegador e visite o endereço http://localhost:3000. Deve aparecer no navegador a frase "Olá, visitante!" @done(22-03-07 12:40)
+        ✔ Verifique se a pasta node_modules aparece listada no comando git status @done(22-03-07 12:41)
 
 
 
 Fase 3 - Instalação do nodemon e configuração para auto restart:
-    ☐ Instale o nodemon no projeto como dependência de desenvolvimento
+    ✔ Instale o nodemon no projeto como dependência de desenvolvimento @done(22-03-07 12:41)
     https://pt.stackoverflow.com/questions/163785/qual-a-diferen%C3%A7a-entre-dependencies-e-devdependencies
 
-    ☐ Altere o package.json:
-        ☐ Acrescente uma propriedade "start" ao objeto "scripts".
-        ☐ A propriedade start deve conter a string "nodemon app.js"
-    ☐ Execute o comando npm start no console.
+    ✔ Altere o package.json: @done(22-03-07 12:47)
+        ✔ Acrescente uma propriedade "start" ao objeto "scripts". @done(22-03-07 12:47)
+        ✔ A propriedade start deve conter a string "nodemon app.js" @done(22-03-07 12:47)
+    ✔ Execute o comando npm start no console. @done(22-03-07 12:47)
 
     Verificações:
-        ☐ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console.
-        ☐ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela.
+        ✔ Veja se a mensagem "Servidor rodando na porta 3000" aparece no console. @done(22-03-07 12:47)
+        ✔ Abra o navegador e acesse http://localhost:3000. A mensagem 'Olá, visitante!' deve aparecer na tela. @done(22-03-07 12:47)
 
 
         
