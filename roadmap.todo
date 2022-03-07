@@ -43,27 +43,27 @@ Fase 3 - Instalação do nodemon e configuração para auto restart:
 
         
 Fase 4 - Organizando o MVC:
-    ☐ Crie uma pasta chamada routes na raíz do projeto.
-    ☐ Na pasta routes, crie um arquivo chamado PizzasRouter.js
-    ☐ No arquivo PizzasRouter.js:
-        ☐ Importe o express.
-        ☐ Crie um roteador e armazene-o numa constante router
-        ☐ Exporte essa constante
+    ✔ Crie uma pasta chamada routes na raíz do projeto. @done(22-03-07 12:50)
+    ✔ Na pasta routes, crie um arquivo chamado PizzasRouter.js @done(22-03-07 12:51)
+    ✔ No arquivo PizzasRouter.js: @done(22-03-07 12:58)
+        ✔ Importe o express. @done(22-03-07 12:52)
+        ✔ Crie um roteador e armazene-o numa constante router @done(22-03-07 12:53)
+        ✔ Exporte essa constante @done(22-03-07 12:58)
 
-    ☐ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter.
+    ✔ No arquivo app.js importe o roteador recém criado para uma constante chamada PizzasRouter. @done(22-03-07 12:58)
         Atente para que o uso do PizzasRouter ocorra depois da criação da
         aplicação mas antes da linha que iniciar.
-    ☐ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____)
-    ☐ Crie uma pasta chamada controllers na raíz do projeto.
-    ☐ Na pasta controllers crie um arquivo chamado PizzasController.js
+    ✔ Utilize o PizzasRouter como roteador da aplicação. Dica: app.use(____) @done(22-03-07 13:02)
+    ✔ Crie uma pasta chamada controllers na raíz do projeto. @done(22-03-07 13:03)
+    ✔ Na pasta controllers crie um arquivo chamado PizzasController.js @done(22-03-07 13:04)
         Em passos a frente, o arquivo PizzasController.js irá conter as funções
         responsáveis por tratar da requisição e da resposta a ser enviada para o cliente.
         Essas funções chamaremos de controllers ou controladores.
-    ☐ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports
-    ☐ Crie uma pasta chamada public.
-    ☐ Dentro da pasta public, crie duas pastas: css e img
-    ☐ Mova os arquivos que estão na pasta imagens para a pasta public/img
-    ☐ Remova a pasta imagens
+    ✔ No arquvo PizzasController.js crie um objeto literal vazio e o exporte utilizando o module.exports @done(22-03-07 13:05)
+    ✔ Crie uma pasta chamada public. @done(22-03-07 13:06)
+    ✔ Dentro da pasta public, crie duas pastas: css e img @done(22-03-07 13:06)
+    ✔ Mova os arquivos que estão na pasta imagens para a pasta public/img @done(22-03-07 13:08)
+    ✔ Remova a pasta imagens @done(22-03-07 13:08)
     
     Verificações:
         A cada alteração salva nos passos da Fase 4
