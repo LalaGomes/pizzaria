@@ -121,21 +121,21 @@ Fase 7 - Acrescentando estilo e imagens a página estática:
         Você deve ver uma página exibindo as pizzas :p
 
 Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
-    ☐ Crie uma pasta chamada database
-    ☐ Na pasta database crie um arquivo chamado Pizzas.json
+    ✔ Crie uma pasta chamada database @done(22-03-07 14:11)
+    ✔ Na pasta database crie um arquivo chamado Pizzas.json @done(22-03-07 14:11)
         Este arquivo irá conter um array com objetos.
         Cada um desses objeto terá informações sobre uma pizza
-    ☐ Copie para o arquivo Pizzas.json o conteúdo do link abaixo
+    ✔ Copie para o arquivo Pizzas.json o conteúdo do link abaixo @done(22-03-07 14:12)
     https://github.com/sergiomoura/pizzaria-fantastica/blob/master/database/Pizzas.json
-    ☐ No arquivo PizzasController.js
-        ☐ Importe o conteúdo do arquivo Pizzas.json para uma variável chamada pizzas.
-        ☐ Altere a função listar para que ela renderize a view pizzas passando para ela também a variável pizzas.
-    ☐ No arquivo pizzas.ejs
-        ☐ Logo no começo da tag main, crie um elemento <% %> com um 'for'
-        ☐ Este 'for' deve percorrer o array de pizzas. Dica: for(p of pizzas){}
-        ☐ Ponha dentro do for um dos elementos' article presentes no arquivo
-        ☐ Lembre de ter um elemento <% %> para fechar o for, isto é: <% } %>
-        ☐ Injete nesse elemento article que está dentro do for as informações dinâmicas:
+    ✔ No arquivo PizzasController.js @done(22-03-07 14:16)
+        ✔ Importe o conteúdo do arquivo Pizzas.json para uma variável chamada pizzas. @done(22-03-07 14:13)
+        ✔ Altere a função listar para que ela renderize a view pizzas passando para ela também a variável pizzas. @done(22-03-07 14:16)
+    ✔ No arquivo pizzas.ejs @done(22-03-07 14:24)
+        ✔ Logo no começo da tag main, crie um elemento <% %> com um 'for' @done(22-03-07 14:24)
+        ✔ Este 'for' deve percorrer o array de pizzas. Dica: for(p of pizzas){} @done(22-03-07 14:24)
+        ✔ Ponha dentro do for um dos elementos' article presentes no arquivo @done(22-03-07 14:24)
+        ✔ Lembre de ter um elemento <% %> para fechar o for, isto é: <% } %> @done(22-03-07 14:24)
+        ✔ Injete nesse elemento article que está dentro do for as informações dinâmicas: @done(22-03-07 14:25)
         Exemplo:
             Onde se vê:
             <img src="/img/quatroqueijos.jpg" alt="Quatro Queijos">
@@ -143,7 +143,7 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
             <img src="<%=p.img%>" alt="<%=p.nome%>">
         Obs:
             Ainda não alteraremos o link <a href="pizza.html">Ver Mais</a>
-        ☐ Apague todos os elementos article que estiverem fora do for.
+        ✔ Apague todos os elementos article que estiverem fora do for. @done(22-03-07 14:26)
     
     Verificações:
         Com o sevidor rodando, visite o endereço https://localhost:3000

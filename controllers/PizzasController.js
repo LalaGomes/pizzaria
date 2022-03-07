@@ -1,6 +1,8 @@
 const PizzasController = {
     listar: (req, res) =>{
-        res.render('pizzas.ejs')
+        const pizzas = require('../database/Pizzas.json')
+        
+        res.render('pizzas.ejs', {pizzas});
     }
 };
 

@@ -15,76 +15,18 @@
 	</form>
 
 	<main>
-		<article>
-			<img src="./img/quatroqueijos.jpg" alt="Quatro Queijos">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Quatro Queijos</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/pepperoni.jpg" alt="Pepperoni">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Pepperoni</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/fracatu.jpg" alt="Fracatu">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Fracatu</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/calabresa.jpg" alt="Calabresa">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Calabresa</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/marguerita.jpg" alt="marguerita">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Marguerita</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/quatroqueijos.jpg" alt="Quatro Queijos">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Quatro Queijos</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/pepperoni.jpg" alt="Pepperoni">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Pepperoni</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/fracatu.jpg" alt="Fracatu">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Fracatu</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/calabresa.jpg" alt="Calabresa">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Calabresa</div>
-			<span>R$ 33,90</span>
-		</article>
-		<article>
-			<img src="./img/marguerita.jpg" alt="marguerita">
-			<a href="pizza.html">Ver Mais</a>
-			<button>+ Add</button>
-			<div>Marguerita</div>
-			<span>R$ 33,90</span>
-		</article>
+		<% 
+		for(p of pizzas){
+			%>
+			<article>
+				<img src="<%=p.img%>" alt="<%=p.nome%>">
+				<a href="pizza.html">Ver Mais</a>
+				<button>+ Add</button>
+				<div><%=p.nome%></div>
+				<span>R$ 33,90</span>
+			</article>
+			<% } %>
+		
 	</main>
 
 	<!--
