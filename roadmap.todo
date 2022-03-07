@@ -73,51 +73,51 @@ Fase 4 - Organizando o MVC:
 
 
 Fase 5 - Configurando o template engina e pasta de arquivos públicos:
-    ☐ Instale no projeto a biblioteca ejs
+    ✔ Instale no projeto a biblioteca ejs @done(22-03-07 13:36)
     ☐ No app.js:
-        ☐ Importe a biblioteca nativa path.
-        ☐ Configure a aplicação para que ela utilize o EJS como template engine
+        ✔ Importe a biblioteca nativa path. @done(22-03-07 13:37)
+        ✔ Configure a aplicação para que ela utilize o EJS como template engine @done(22-03-07 13:40)
             Dica: Linha 12 de https://github.com/sergiomoura/filnemateca/blob/0721CDPROCV01BRED/index.js
-        ☐ Configure a aplicação para que ela reconheça a pasta public como a pasta de arquivos públicos e estáticos
+        ✔ Configure a aplicação para que ela reconheça a pasta public como a pasta de arquivos públicos e estáticos @done(22-03-07 13:42)
         Dica: Linha 15 de https://github.com/sergiomoura/filnemateca/blob/0721CDPROCV01BRED/index.js
         Importante: Essas duas últimas alterações devem ser feitas antes do uso o ro
 
     Verificações:
-        ☐ Verifique se o console está apresentando algum erro e se o nodemon está rodando.
+        ✔ Verifique se o console está apresentando algum erro e se o nodemon está rodando. @done(22-03-07 13:42)
 
 Fase 6 - Retornando a página estática com pizzas:
-    ☐ No arquivo PizzasRouter.js:
-        ☐ Importe o PizzasController
-        ☐ Crie uma rota get para '/' direcionando a requisição para PizzasController.listar
-    ☐ No objeto literal que está no PizzasController.js, crie uma função chamada listar
+    ✔ No arquivo PizzasRouter.js: @done(22-03-07 13:57)
+        ✔ Importe o PizzasController @done(22-03-07 13:44)
+        ✔ Crie uma rota get para '/' direcionando a requisição para PizzasController.listar @done(22-03-07 13:48)
+    ✔ No objeto literal que está no PizzasController.js, crie uma função chamada listar @done(22-03-07 13:49)
         Essa função listar deve renderizar a view pizzas.ejs que será criado nos próximos passos
-    ☐ Crie uma pasta chamada views
-    ☐ Na pasta views crie um arquivo chamado pizzas.ejs
-    ☐ Copie para o arquivo pizzas.ejs o conteúdo do link abaixo:
+    ✔ Crie uma pasta chamada views @done(22-03-07 13:51)
+    ✔ Na pasta views crie um arquivo chamado pizzas.ejs @done(22-03-07 13:51)
+    ✔ Copie para o arquivo pizzas.ejs o conteúdo do link abaixo: @done(22-03-07 13:51)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/index.html
-    ☐ No arquivo app.js, remova a rota app.get criada na Fase 2.
+    ✔ No arquivo app.js, remova a rota app.get criada na Fase 2. @done(22-03-07 13:52)
     Verificações:
-        ☐ Com o sevidor rodando, visite http://localhost:3000.
+        ✔ Com o sevidor rodando, visite http://localhost:3000. @done(22-03-07 13:59)
             Você deve ver uma página com algumas informações sobre pizzas
             (nomes e preços) mas ainda sem estilização nem imagens
 
 
 
 Fase 7 - Acrescentando estilo e imagens a página estática:
-    ☐ Dentro da pasta public/css crie um arquivo chamado styles.css
-    ☐ Copie para o arquivo styles.css o conteúdo do link abaixo:
+    ✔ Dentro da pasta public/css crie um arquivo chamado styles.css @done(22-03-07 14:00)
+    ✔ Copie para o arquivo styles.css o conteúdo do link abaixo: @done(22-03-07 14:01)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/assets/css/styles.css
-    ☐ Dentro da pasta public/css crie um arquivo chamado index.css
-    ☐ Copie para o arquivo index.css o conteúdo do link abaixo:
+    ✔ Dentro da pasta public/css crie um arquivo chamado index.css @done(22-03-07 14:02)
+    ✔ Copie para o arquivo index.css o conteúdo do link abaixo: @done(22-03-07 14:02)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/assets/css/index.css
 
-    ☐ No arquivo pizzas.ejs:
-        ☐ Adeque o caminho do link do estilo para /css/styles.css
-        ☐ Adeque o caminho do link do estilo para /css/index.css
-        ☐ Adeque o caminho das imagens para /img/quatroqueijos.jpg
+    ✔ No arquivo pizzas.ejs: @done(22-03-07 14:08)
+        ✔ Adeque o caminho do link do estilo para /css/styles.css @done(22-03-07 14:08)
+        ✔ Adeque o caminho do link do estilo para /css/index.css @done(22-03-07 14:08)
+        ✔ Adeque o caminho das imagens para /img/quatroqueijos.jpg @done(22-03-07 14:08)
 
     Verificações:
-        ☐ Com o sevidor rodando, visite https://localhost:3000
+        ✔ Com o sevidor rodando, visite https://localhost:3000 @done(22-03-07 14:08)
         Você deve ver uma página exibindo as pizzas :p
 
 Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
