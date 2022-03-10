@@ -12,7 +12,7 @@ Fase 2 - Criação da aplicação (Criado o sevidor web no app.js):
     ✔ Instale a biblioteca express no projeto @done(22-03-05 13:56)
     ✔ Faça com que o git ignore a pasta node_modules @done(22-03-05 14:00)
     ✔ Crie um arquivo chamado app.js na raíz do seu projeto @done(22-03-05 13:57)
-    ☐ No app.js:
+    ✔ No app.js: @done(22-03-09 10:46)
         ✔ Importe o express @done(22-03-05 14:02)
         ✔ Crie um aplicação web com o express e guarde-a numa constante app. @done(22-03-07 12:29)
         ✔ Crie uma rota get para o endereço '/'. @done(22-03-07 12:34)
@@ -74,7 +74,7 @@ Fase 4 - Organizando o MVC:
 
 Fase 5 - Configurando o template engina e pasta de arquivos públicos:
     ✔ Instale no projeto a biblioteca ejs @done(22-03-07 13:36)
-    ☐ No app.js:
+    ✔ No app.js: @done(22-03-09 10:46)
         ✔ Importe a biblioteca nativa path. @done(22-03-07 13:37)
         ✔ Configure a aplicação para que ela utilize o EJS como template engine @done(22-03-07 13:40)
             Dica: Linha 12 de https://github.com/sergiomoura/filnemateca/blob/0721CDPROCV01BRED/index.js
@@ -148,23 +148,23 @@ Fase 8 - Mostrando as pizzas dinamicamente a partir de um arquivo JSON:
     Verificações:
         Com o sevidor rodando, visite o endereço https://localhost:3000
         Você deve ver o a página exibindo as pizzas, mas com preços apenas
-        vão ter um PONTO como separador de decimal.
+        ✔ vão ter um PONTO como separador de decimal. @done(22-03-08 14:59)
 
 
 Fase 9 - Criando uma página para mostrar detalhes de uma pizza:
-    ☐ No arquivo PizzasRouter.js crie uma rota get para '/pizzas/:id'
+    ✔ No arquivo PizzasRouter.js crie uma rota get para '/pizzas/:id' @done(22-03-08 14:27)
         Essa rota deve direcionar a requisição para o controller PizzasController.mostrar
-    ☐ No objeto literal do arquivo PizzasController.js, crie uma função chamada mostrar.
+    ✔ No objeto literal do arquivo PizzasController.js, crie uma função chamada mostrar. @done(22-03-08 14:28)
         Essa função deve:
-            ☐ Capturar o id da pizza desejada pelo usuário (req.params.id) numa variável id
-            ☐ Buscar no array de pizzas a pizza tem o id buscado e guardar numa variável pizza
+            ✔ Capturar o id da pizza desejada pelo usuário (req.params.id) numa variável id @done(22-03-08 14:47)
+            ✔ Buscar no array de pizzas a pizza tem o id buscado e guardar numa variável pizza @done(22-03-08 14:47)
                 Dica: pizzas.find(p=>p.id==id)
-            ☐ Renderizar a view pizza.ejs, passando para ela também a variável pizza
+            ✔ Renderizar a view pizza.ejs, passando para ela também a variável pizza @done(22-03-08 14:48)
 
-    ☐ Na pasta views, crie o arquivo pizza.ejs
-    ☐ Copie para o arquivo pizza.ejs o conteúdo do link abaixo
+    ✔ Na pasta views, crie o arquivo pizza.ejs @done(22-03-08 14:50)
+    ✔ Copie para o arquivo pizza.ejs o conteúdo do link abaixo @done(22-03-08 14:50)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/pizza.html
-    ☐ Adeque o arquivo de pizza.ejs para exibir as informações dinâmicas:
+    ✔ Adeque o arquivo de pizza.ejs para exibir as informações dinâmicas: @done(22-03-08 14:58)
         Exemplo:
             Onde se vê:
             <h1>Quatro Queijos</h1>
@@ -178,17 +178,17 @@ Fase 9 - Criando uma página para mostrar detalhes de uma pizza:
             O que se deve ver são as informações da pizza Fracatu, ainda sem estilização.
 
 Fase 10 - Acrescentando estilo à página de pizza:
-    ☐ Na pasta public/css crie um arquivo pizza.css
-    ☐ Copie para o arquivo pizza.css o conteúdo do link abaixo:
+    ✔ Na pasta public/css crie um arquivo pizza.css @done(22-03-10 10:14)
+    ✔ Copie para o arquivo pizza.css o conteúdo do link abaixo: @done(22-03-10 10:14)
     https://github.com/sergiomoura/pizzaria-fantastica-tema/blob/master/assets/css/pizza.css
-    ☐ Adeque o os links de estilos para que eles carreguem o estilo da pasta public
+    ✔ Adeque o os links de estilos para que eles carreguem o estilo da pasta public @done(22-03-10 10:18)
     
     Verificações:
         Com o servidor rodando, visite o endereço http://localhost:3000/pizzas/3
         O que se deve ver é uma página com as informações de uma pizza, agora, estilizada.
 
 Fase 11 - Criando link da página inicial para página de detalhes de uma pizza:
-    ☐ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link:
+    ✔ Na view da página inicial, ou seja, no arquivo pizzas.ejs altere o link: @done(22-03-10 14:56)
     Onde se vê:
         <a href="pizza.html">Ver Mais</a>
     Deve se ver:
