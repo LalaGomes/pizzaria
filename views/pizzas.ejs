@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pizzaria Fantástica</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 	<link rel="stylesheet" href="/css/index.css">
-	<form action="/busca" method="get">
-		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="">
+	<form action="/pizzas/busca" method="get">
+		<input type="text" name="q" placeholder="Qual pizza você procura?" autocomplete="off" value="<%= busca %>">
 		<button type="submit">Buscar</button>
 	</form>
 
@@ -29,7 +29,9 @@
 		</article> 
 		<%}%>
 	</main>
-
+	<% if (pizzas.length == 0){%>
+        <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
+    <%}%>
 	<!--
 	<div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
 	-->

@@ -200,25 +200,25 @@ Fase 11 - Criando link da página inicial para página de detalhes de uma pizza:
         Você deve ser direcionado para a página que exibe as informações
         da pizza que você clicou.
 Fase 12 - Exibindo pizzas buscadas:
-    ☐ Adequando o form da view para busca
+    ✔ Adequando o form da view para busca @done(22-03-10 22:29)
         No arquivo pizzas.ejs altere o form para que ele tenha método get e
         action apontando para a rota /pizzas/busca
-    ☐ No PizzasRouter.js, crie uma rota get para /pizzas/busca.
+    ✔ No PizzasRouter.js, crie uma rota get para /pizzas/busca. @done(22-03-10 22:29)
         Essa rota deve direcionar a requisição para PizzasController.buscar
         Ela deve ser definida ANDTES da rota '/pizzas/:id'. Por que?
-    ☐ No objeto do PizzasController.js crie uma função buscar.
+    ✔ No objeto do PizzasController.js crie uma função buscar. @done(22-03-10 22:29)
         Essa função deve:
-            ☐ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado
+            ✔ Capturar o que o usuário digitou no campo de busca e guardar na variável trechoBuscado @done(22-03-10 22:29)
                Dica: Dê um console.log(req.query) e veja o conteúdo desse objeto.
-            ☐ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/'
+            ✔ Se o trechoBuscado for vazio, redirecione o usuário para a rota '/' @done(22-03-10 22:29)
                 Dica: res.redirect(___)
-            ☐ Se trechoBuscado não for vazio:
-                - Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado
+            ✔ Se trechoBuscado não for vazio: @done(22-03-10 22:29)
+                ✔ Filtre do array de pizzas todas as pizzas que tem no nome o trechoBuscado @done(22-03-10 22:29)
                     Atenção: A busca não deve ser sensível ao caso, ou seja, 
                     buscando por 'm' deve encontrar 'Marguerita', mesmo tendo-se
                     buscado pela letra minúscula
-                - Armazene o resultado dessa filtragem numa variável resultado
-                - Renderize a view pizzas.ejs passando para ela um objeto literal contendo:
+                ✔ Armazene o resultado dessa filtragem numa variável resultado @done(22-03-10 22:29)
+                ✔ Renderize a view pizzas.ejs passando para ela um objeto literal contendo: @done(22-03-10 22:29)
                     1. Um campo de nome pizzas e de valor igual a variável resultado.
                     2. Um campo de nome busca com o valor igual a variável trechoBuscado.
                 Dica: res.render('pizzas.ejs',{campo1: valor1, campo2: valor2})
@@ -227,7 +227,7 @@ Fase 12 - Exibindo pizzas buscadas:
         Devem aparecer somente as pizzas Baiana e Meat & Bacon
 
 Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
-    ☐ No pizzas.ejs:
+    ✔ No pizzas.ejs: @done(22-03-10 22:31)
         Crie um elemento por cento e nele um if que testa se
         o tamanho do array de pizzas é zero. Caso seja, mostrar mensagem...
         <div class="pizza-nao-encontrada">Nenhuma pizza encontrada. Tente ser menos específico na sua busca.</div>
@@ -238,8 +238,8 @@ Fase 13 - Exibindo mensagem de específica quando nenhuma pizza for encontrada:
         específico na sua busca."
 
 Fase 14 - Fazendo com que o que o usuário digitou na busca não seja perdido:
-    ☐ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio.
-    ☐ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia).
+    ✔ Na view  pizzas.ejs altere o elemento input type="text" para que o atributo value mostre busca, caso busca não seja vazio. @done(22-03-10 22:33)
+    ✔ No controller listar do PizzasController, além do array de pizzas, passe um campo "busca" com o valor '' (string vazia). @done(22-03-10 23:00)
 
 Fase 15 - Passando de uma pizza para outra:
     Nessa fase, faremos com que na página que exibe os detalhes de
