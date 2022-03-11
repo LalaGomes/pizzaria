@@ -245,16 +245,16 @@ Fase 15 - Passando de uma pizza para outra:
     Nessa fase, faremos com que na página que exibe os detalhes de
     uma pizza, seja possível navegar para a próxima pizza e para
     a pizza anterior clicando nos links em forma de seta
-    ☐ Na função mostrar no arquivo PizzasController:
-        - Declare duas variáveis: idProxima e idAnterior 
-        - Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id)
-        - Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao
-        - Guarde a pizza da posicao encontrada na variável pizza
-        - Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza
-        - Caso contrário, idProxima deve ter o id da pizza da posição seguinte
-        - Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza
-        - Caso controário, idAnterior deve receber o id da pizza na posição anterior.
-    ☐ No arquivo pizza.ejs, adeque os links:
+    ✔ Na função mostrar no arquivo PizzasController: @done(22-03-10 23:35)
+    ✔ Capture o id da pizza a partir da URL na variável id (Esse passo já foi dado... req.params.id) @done(22-03-10 23:40)
+    ✔ Determine a posição da pizza que tem o id desejado (Dica: Use a função findIndex) e guarde na variável posicao @done(22-03-10 23:40)
+    ✔ Declare duas variáveis: idProxima e idAnterior @done(22-03-10 23:40)
+        ✔ Guarde a pizza da posicao encontrada na variável pizza @done(22-03-10 23:40)
+        ✔ Se a posição da pizza encontrada for a última do array, idProxima deve receber o id da primeira pizza @done(22-03-10 23:40)
+        ✔ Caso contrário, idProxima deve ter o id da pizza da posição seguinte @done(22-03-10 23:40)
+        ✔ Se a posição da pizza envontrada for a primeira do array, o idAnterior deve receber o id da última pizza @done(22-03-10 23:40)
+        ✔ Caso controário, idAnterior deve receber o id da pizza na posição anterior. @done(22-03-10 23:40)
+    ✔ No arquivo pizza.ejs, adeque os links: @done(22-03-10 23:44)
         Onde se vê:
             <a href="pizza.html" class="prev">
         Deve se ver:
